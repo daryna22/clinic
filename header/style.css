@@ -1,0 +1,98 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+.head_main-image {
+    padding-top: 30px;
+    object-fit: none;
+    padding-right: 20px;
+    padding-left: 50px;
+}
+.head_navigation {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Colibri', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.head_item {
+    display:inline-block;
+    margin-right:10px;
+}
+.head {
+    display: inline-flex;
+    background-color: #43b1d2;
+    height: 125px;
+    display: inline-flex;
+    width: 100%;
+    color: white;
+    font-family: 'Calibri';
+}
+
+.head_menu {
+    display: table;
+    text-align: right;
+    margin-top: 30px;
+    margin-left: 400px;
+}
+.banner {
+    background: url(img/doctor.png);
+    padding-top: 5%;
+    padding-right: 55px;
+    text-align: right;
+    font-family: Calibri;
+    max-height: 230px;
+    padding-bottom: 13%;
+}
+.banner_info {
+    max-height: 105px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+.banner_recall {
+    font-family: Calibri;
+    font-size: 48px;
+}
+.blocks {
+    display: inline-flex;
+    width: 100%;
+}
+.blocks_treatment, .blocks_help, .blocks_staff, .blocks_doctors {
+    display: inline-table;
+    text-align: center;
+    width: 25%;
+    color: white;
+    padding-top: 60px;
+    height: 200px;
+}
+.blocks_treatment {
+    background-color: #43b1d2;
+}
+.blocks_help {
+    background-color: #3fb6c6;
+}
+.blocks_staff {
+    background-color: #3cbbbb;
+}
+.blocks_doctors {
+    background-color: #37c3a8;
+}
+.head_phone {
+    font-size: 20px;
+    font-family: Tahoma;
+}
+a:link {
+    color: #494848;
+}
+a:visited {
+    color: #494848;
+}
+a:active {
+    color: white;
+}
