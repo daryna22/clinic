@@ -3,13 +3,13 @@ body {
     margin: 0%;
 }
 
-.head_main-image {
+.head__main-image {
     padding-top: 30px;
     object-fit: none;
     padding-right: 20px;
     padding-left: 50px;
 }
-.head_navigation {
+.head__navigation {
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -20,7 +20,7 @@ body {
 a {
     text-decoration: none;
 }
-.head_item {
+.head__item {
     display:inline-block;
     margin-right:10px;
 }
@@ -34,7 +34,7 @@ a {
     font-family: 'Calibri';
 }
 
-.head_menu {
+.head__menu {
     display: table;
     text-align: right;
     margin-top: 30px;
@@ -49,13 +49,13 @@ a {
     max-height: 230px;
     padding-bottom: 13%;
 }
-.banner_info {
+.banner__info {
     max-height: 105px;
     font-size: 20px;
     letter-spacing: 2px;
     word-spacing: 4px;
 }
-.banner_recall {
+.banner__recall {
     font-family: Calibri;
     font-size: 48px;
 }
@@ -63,7 +63,7 @@ a {
     display: inline-flex;
     width: 100%;
 }
-.blocks_treatment, .blocks_help, .blocks_staff, .blocks_doctors {
+.blocks__treatment, .blocks__help, .blocks__staff, .blocks__doctors {
     display: inline-table;
     text-align: center;
     width: 25%;
@@ -71,19 +71,19 @@ a {
     padding-top: 60px;
     height: 200px;
 }
-.blocks_treatment {
+.blocks__treatment {
     background-color: #43b1d2;
 }
-.blocks_help {
+.blocks__help {
     background-color: #3fb6c6;
 }
-.blocks_staff {
+.blocks__staff {
     background-color: #3cbbbb;
 }
-.blocks_doctors {
+.blocks__doctors {
     background-color: #37c3a8;
 }
-.head_phone {
+.head__phone {
     font-size: 20px;
     font-family: Tahoma;
 }
