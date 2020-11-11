@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Work with float</title>
+    </head>
+        <style>
+           header {
+               width: 100%;
+               background-color: bisque;
+               height: 10vh;
+           }
+           .clearfix::after {
+               display: block;
+               content: "";
+               clear: both;
+           }
+           .left {
+               float: left;
+               width: 300px;
+               height: 80vh;
+           }
+           .right {
+               float: right;
+               width: calc(100% - 300px);
+               background-color: #168b18;
+               height: 80vh;
+           }
+           footer {
+               width: 100%;
+               background-color: darkcyan;
+               height: 10vh;
+           }
+        </style>
+    <body>
+        <header>Header</header>
+        <main class="clearfix">
+            <div class="left">Left</div>
+            <div class="right">Right</div>
+        </main>
+        <footer>Footer</footer>
+    </body>
+    </html>
