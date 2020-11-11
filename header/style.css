@@ -1,75 +1,60 @@
+* {
+    box-sizing: border-box;
+}
 body {
     padding: 0%;
     margin: 0%;
-}
-
-.head__main-image {
-    padding-top: 30px;
-    object-fit: none;
-    padding-right: 20px;
-    padding-left: 50px;
-}
-.head__navigation {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-family: 'Colibri', sans-serif;
-}
-a {
-    text-decoration: none;
-}
-.head__item {
-    display:inline-block;
-    margin-right:10px;
+    display: flex;
+    flex-direction: column;
 }
 .head {
-    display: inline-flex;
     background-color: #43b1d2;
-    height: 125px;
-    display: inline-flex;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    padding: 2%;
     color: white;
     font-family: 'Calibri';
 }
-
-.head__menu {
-    display: table;
-    text-align: right;
-    margin-top: 30px;
-    margin-left: 400px;
+.head__name {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 5%;
 }
 .banner {
     background: url(img/doctor.png);
-    padding-top: 5%;
-    padding-right: 55px;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
     text-align: right;
-    font-family: Calibri;
-    max-height: 230px;
-    padding-bottom: 13%;
+    padding: 2%;
 }
 .banner__info {
-    max-height: 105px;
     font-size: 20px;
     letter-spacing: 2px;
     word-spacing: 4px;
-}
-.banner__recall {
-    font-family: Calibri;
-    font-size: 48px;
+    font-family: 'Colibri', sans-serif;
+} 
+.banner__recall-form {
+    font-family: 'Colibri', sans-serif;
+    font-size: 40px;
 }
 .blocks {
-    display: inline-flex;
-    width: 100%;
+    display: flex;
+
 }
 .blocks__treatment, .blocks__help, .blocks__staff, .blocks__doctors {
-    display: inline-table;
-    text-align: center;
     width: 25%;
     color: white;
-    padding-top: 60px;
-    height: 200px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    text-align: center;
 }
 .blocks__treatment {
     background-color: #43b1d2;
@@ -83,9 +68,33 @@ a {
 .blocks__doctors {
     background-color: #37c3a8;
 }
-.head__phone {
+.head__menu {
+    display: flex; 
+    flex-direction: column;
+    max-width: fit-content;
+}
+.head__navigation {
+    list-style: none;
     font-size: 20px;
-    font-family: Tahoma;
+    font-family: 'Colibri', sans-serif;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+.head__main-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: fit-content;
+}
+.head__phone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.head__item {
+    padding-right: 30px;
 }
 a:link {
     color: #494848;

@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+.head {
+    display: flex;
+    align-items: flex-start;
+    height: 150%;
+    padding: 2%;
+    color: white;
+    font-family: 'Calibri';
+}
+.head__name {
+    font-size: 100%;
+}
+.head__navigation {
+    list-style: none;
+    font-size: 20%;
+    font-family: 'Colibri', sans-serif;
+    display: block;
+    margin-right: 80%;
+}
+.blocks {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.blocks__treatment, .blocks__help, .blocks__staff, .blocks__doctors {
+    width: 50%;
+    color: white;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    text-align: center;
+}
