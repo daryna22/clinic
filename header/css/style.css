@@ -23,7 +23,7 @@ body {
     margin-left: 5%;
 }
 .banner {
-    background: url(img/doctor.png);
+    background: url(../img/doctor.png);
     display: flex;
     height: 500px;
     justify-content: center;
