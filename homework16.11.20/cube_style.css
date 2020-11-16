@@ -16,17 +16,17 @@ body {
     width: 200px;
 }
 .top {
-    background: #9acc53;
+    background: linear-gradient(to top right, #fefcea, #f1da36);;
     animation: movetop 2s;
     animation-fill-mode: forwards;
 }
 .left {
-    background:  #8ec63f;
+    background: linear-gradient(to bottom right, #fefcea, #8ec63f);
     animation: moveleft 2s;
     animation-fill-mode: forwards;
 }
 .right {
-    background: #80b239;
+    background: linear-gradient(to bottom left, #fefcea, #1a2bfa);
     animation: moveright 2s;
     animation-fill-mode: forwards;
 }
