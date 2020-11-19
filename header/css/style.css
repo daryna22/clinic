@@ -103,11 +103,13 @@ a:active {
 
 .input__tel {
     border: 0;
+    height: 30px;
 }
 
 .input__submit {
     background-color: #cbd4e6;
     color: #6c758e;
+    height: 30px;
 }
 
 .blocks {
