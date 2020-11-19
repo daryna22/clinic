@@ -1,107 +1,468 @@
 * {
     box-sizing: border-box;
 }
+
 body {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #494848;
+}
+
+a:visited {
+    color: #494848;
+}
+
+a:active {
+    color: white;
+}
+
 .head {
     background-color: #43b1d2;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 130px;
-    padding: 2%;
     color: white;
-    font-family: 'Calibri';
+    font-family: 'Calibri', sans-serif;
+    padding: 0 calc(50% - 800px);
 }
+
+.bg-phone {
+    width: 25px;
+    height: 25px;
+    background: url(../img/css_sprites.png) -136px -79px;
+}
+
+.bg-treat {
+    width: 41px;
+    height: 45px;
+    background: url(../img/css_sprites.png) 6px -61px;
+}
+
+.bg-help {
+    width: 46px;
+    height: 41px;
+    background: url(../img/css_sprites.png) 2px 2px;
+}
+
+.bg-staff {
+    width: 28px;
+    height: 49px;
+    background: url(../img/css_sprites.png) -116px -5px;
+}
+
+.bg-docs {
+    width: 40px;
+    height: 38px;
+    background: url(../img/css_sprites.png) -61px 2px;
+}
+
 .head__name {
     font-size: 30px;
     font-weight: 700;
     margin-left: 5%;
 }
+
 .banner {
-    background: url(../img/doctor.png);
+    background: url(../img/doctor.png) 50% no-repeat #cbd4e6;
     display: flex;
     height: 500px;
     justify-content: center;
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    padding: 2%;
+    padding: 0 calc(50% - 800px);
 }
+
 .banner__info {
     font-size: 20px;
     letter-spacing: 2px;
     word-spacing: 4px;
     font-family: 'Colibri', sans-serif;
-} 
+}
+
 .banner__recall-form {
     font-family: 'Colibri', sans-serif;
     font-size: 40px;
 }
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__tel {
+    border: 0;
+}
+
+.input__submit {
+    background-color: #cbd4e6;
+    color: #6c758e;
+}
+
 .blocks {
     display: flex;
-
+    padding: 0 calc(50% - 800px);
 }
+
 .blocks__treatment, .blocks__help, .blocks__staff, .blocks__doctors {
     width: 25%;
     color: white;
-    margin-top: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2%;
     text-align: center;
 }
+
 .blocks__treatment {
     background-color: #43b1d2;
 }
+
 .blocks__help {
     background-color: #3fb6c6;
 }
+
 .blocks__staff {
     background-color: #3cbbbb;
 }
+
 .blocks__doctors {
     background-color: #37c3a8;
 }
+
 .head__menu {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     max-width: fit-content;
 }
+
 .head__navigation {
     list-style: none;
     font-size: 20px;
     font-family: 'Colibri', sans-serif;
     display: flex;
 }
-a {
-    text-decoration: none;
-}
+
 .head__main-image {
     display: flex;
     flex-direction: row;
     align-items: center;
     max-width: fit-content;
 }
+
 .head__phone {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
 }
+
 .head__item {
     padding-right: 30px;
 }
-a:link {
-    color: #494848;
+
+.clinics {
+    padding: 0 calc(50% - 800px);
+    display: flex;
+    margin: 1%;
+    flex-wrap: wrap;
+    font-family: 'Calibri', sans-serif;
 }
-a:visited {
-    color: #494848;
+
+.clinic {
+    border: 3px solid #43b1d2;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding: 1%;
+    margin: 1%;
 }
-a:active {
+
+.clinic__name {
+    text-align: right;
+}
+
+.clinic__call {
+    border-radius: 5%;
+    padding: 1%;
+    background-color: #37c3a8;
+    border: none;
+    outline: none;
+    align-self: flex-end;
     color: white;
+}
+
+.clinic__address {
+    color: #67bdd8;
+}
+
+.clinic__image {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clinics__all {
+    margin: auto;
+    border-radius: 5%;
+    border: none;
+    outline: none;
+    width: 10%;
+    padding: 1ex;
+    font-size: 15px;
+    background-color: #cbd4e6;
+}
+
+.ellipse_1 {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: inherit;
+    width: 68px;
+    height: 68px;
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .head {
+        display: flex;
+        height: 150%;
+        color: white;
+        font-family: 'Calibri', sans-serif;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .head__name {
+        font-size: 100%;
+    }
+
+    .head__navigation {
+        list-style: none;
+        font-size: 120%;
+        font-family: 'Colibri', sans-serif;
+        display: block;
+        text-align: center;
+
+    }
+
+    .input {
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blocks {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blocks__treatment, .blocks__help, .blocks__staff, .blocks__doctors {
+        width: 50%;
+        color: white;
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+        text-align: center;
+    }
+
+    .head__phone {
+        font-size: 80%;
+        justify-content: center;
+        padding-left: 10%;
+    }
+
+    .head__main-image {
+        padding-left: 10%;
+    }
+
+    .head__item {
+        padding-right: 0;
+    }
+
+    .banner {
+        display: flex;
+        text-align: right;
+        align-items: flex-end;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .banner__info {
+        letter-spacing: normal;
+        width: 100%;
+        font-size: 85%;
+        padding-left: 2%;
+    }
+
+    .banner__recall-form {
+        text-align: right;
+        font-size: 150%;
+    }
+
+    .banner__background {
+        background: rgba(255, 255, 255, 0.6);
+        padding: 2%;
+    }
+
+    .clinics {
+        display: flex;
+        flex-direction: column;
+        margin: 1%;
+        font-family: 'Calibri', sans-serif;
+    }
+
+    .clinic {
+        border: 3px solid #43b1d2;
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        padding: 1%;
+        margin: 1%;
+        text-align: center;
+    }
+
+    .clinic__image {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .clinic__name {
+        text-align: center;
+    }
+
+    .clinic__call {
+        padding: 1%;
+        margin: 2%;
+        align-self: center;
+    }
+
+    .clinics__all {
+        width: fit-content;
+        padding: 1ex;
+        font-size: 15px;
+        background-color: #cbd4e6;
+    }
+}
+
+@media (min-width: 681px) and (max-width: 1170px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .head {
+        width: 100%;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .head__name {
+        font-size: 100%;
+    }
+
+    .head__navigation {
+        font-size: 80%;
+        position: relative;
+        right: 5%;
+        top: 15%;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .input {
+        padding-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blocks {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blocks__treatment, .blocks__help, .blocks__staff, .blocks__doctors {
+        width: 50%;
+    }
+
+    .head__phone {
+        font-size: 70%;
+        margin-right: 5%;
+        top: 5%;
+    }
+
+    .head__main-image {
+        position: relative;
+        padding-left: 1%;
+        margin: auto;
+    }
+
+    .head__item {
+        margin: 0;
+    }
+
+    .banner {
+        display: flex;
+        text-align: right;
+        align-items: flex-end;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .banner__info {
+        letter-spacing: normal;
+        width: 100%;
+        font-size: 85%;
+        padding-left: 2%;
+    }
+
+    .clinics {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Calibri', sans-serif;
+    }
+
+    .clinic__image {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .clinic__name {
+        text-align: center;
+    }
+
+    .clinic__call {
+        margin: 2%;
+        align-self: center;
+    }
+
+    .clinics__all {
+        width: fit-content;
+    }
+
+    .head__menu {
+        max-width: 80%;
+    }
 }

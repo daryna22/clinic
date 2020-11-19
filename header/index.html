@@ -1,80 +1,162 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="logo.ico">
-        <title>Единый центр записи</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" media="(max-width:640px)" href="css/max-640px.css">
-    </head>
-    <body>
-        <header>
-        <div class="head"> 
-            <div class="head__main-image"><img src="img/logo.png">
-                <p class="head__name"> Единый центр записи</p></div>
-            <div class="head__menu">
-                <div class="head__phone"><h1> <img src="img/phone.png"><b> 80300 5000</b></h1></div>
-            <ul class="head__navigation">
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.ico">
+    <title>Единый центр записи</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+<header>
+    <div class="head">
+        <figure class="head__main-image"><img src="img/logo.png" alt="Логотип">
+            <figcaption class="head__name"> Единый центр записи</figcaption>
+        </figure>
+        <div class="head__menu" role="navigation">
+            <div class="head__phone" aria-label="Номер телефона">
+                <div class="bg-phone"></div>
+                <h1><b> 80300 5000</b></h1></div>
+            <ul class="head__navigation" aria-label="Главное меню" role="menubar">
                 <li class="head__item"><a href="index.html"><b>Главная</b></a></li>
-                <li class="head__item"> <a href="../main/services.html"><b>Услуги</b></a><img src="img/arrow.png"></li>
+                <li class="head__item"><a href="../main/services.html"><b>Услуги</b></a><img src="img/arrow.png"></li>
                 <li class="head__item"><a href="../main/clinics.html"><b>Клиники и кабинеты</b></a></li>
                 <li class="head__item"><a href="../main/about.html"><b>О нас</b></a></li>
                 <li class="head__item"><a href="../main/articles.html"><b>Статьи</b></a></li>
                 <li class="head__item"><a href="../main/faq.html"><b>FAQ</b></a></li>
                 <li class="head__item"><a href="../main/contacts.html"><b>Контакты</b></a></li>
             </ul>
-            </div>
         </div>
-        </header>
-        <section class="banner">
-            <div class="banner__background">
-            <p class="banner__info">Всю необходимую информацию о том, как и в каком центре<br>
-            сделать МРТ, КТ и рентген исследования, сравнить интересующие<br>
-            Вас клиники, цены на диагностику  и порядок прохождения<br>
-            процедур, а также записаться на исследование можно по<br>
-            телефону 8 (812) 385-77-56
-        </p>
-        <h1 class="banner__recall-form">Оставьте свой номер, а мы<br>
-            Вам перезвоним
-        </h1>
-        <form action="#">
-            <input type="tel" name="tel" placeholder="+380">
-            <input type="submit" value="Отправить">
-        </form>
-            </div>
-        </section>
-        <section class="blocks">
-            <div class="blocks__treatment">
-               <img src="img/treat.png" width="15%">
+    </div>
+</header>
+<main>
+<section class="banner" role="banner">
+    <p class="banner__info">Всю необходимую информацию о том, как и в каком центре<br>
+        сделать МРТ, КТ и рентген исследования, сравнить интересующие<br>
+        Вас клиники, цены на диагностику и порядок прохождения<br>
+        процедур, а также записаться на исследование можно по<br>
+        телефону 8 (812) 385-77-56
+    </p>
+    <h1 class="banner__recall-form">Оставьте свой номер, а мы<br>
+        Вам перезвоним
+    </h1>
+    <form action="#" class="input" aria-label="Форма обратного звонка">
+        <div aria-label="Ввести номер"><label><input type="tel" name="tel" placeholder="+380" class="input__tel"></label></div>
+        <div aria-label="Отправить номер"><label><input type="submit" value="Отправить" class="input__submit"></label></div>
+    </form>
+</section>
+<section class="blocks" aria-label="Сервисы">
+    <div class="blocks__treatment">
+        <div class="bg-treat ellipse_1"></div>
         <p><b>Best Treatment</b></p>
         <p>Sed ut perspiciatis unde omnis iste natus<br>
             error sit voluptatem accusantium dolorem-<br>
             que laudantium.</p>
-            </div>
-            <div class="blocks__help">
-            <img src="img/help.png" width="15%">
+    </div>
+    <div class="blocks__help">
+        <div class="bg-help ellipse_1"></div>
         <p><b>Emergency Help</b></p>
         <p>Sed ut perspiciatis unde omnis iste natus<br>
             error sit voluptatem accusantium dolorem-<br>
             que laudantium.</p>
-            </div>
-            <div class="blocks__staff">
-            <img src="img/staff.png" width="15%">
+    </div>
+    <div class="blocks__staff">
+        <div class="bg-staff ellipse_1"></div>
         <p><b>Medical Staff</b></p>
         <p>Sed ut perspiciatis unde omnis iste natus<br>
             error sit voluptatem accusantium dolorem-<br>
             que laudantium.</p>
-            </div>
-            <div class="blocks__doctors">
-            <img src="img/docs.png" width="15%">
+    </div>
+    <div class="blocks__doctors">
+        <div class="bg-docs ellipse_1"></div>
         <p><b>Qualified Doctors</b></p>
         <p>Sed ut perspiciatis unde omnis iste natus<br>
             error sit voluptatem accusantium dolorem-<br>
             que laudantium.</p>
-            </div>
+    </div>
+</section>
+<section class="clinics" aria-label="Список клиник">
+    <div class="clinic" itemscope itemtype="https://schema.org/MedicalOrganization">
+        <div class="clinic__image"><img itemprop="image" src="img/care.png" alt="Фото клиники">
+            <div class="clinic__name">
+                <h1 itemprop="name">Название клиники</h1>
+                <p class="clinic__address" itemprop="address"><em>Ленинский проспект, д. 160, Ленинский проспект</em></p></div>
         </div>
-        </section>
-    </body>
-    </html>
+        <p>Что такое текст «рыба» знают все, кто работает с версткой журналов,
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+            как контент впоследствии будет выглядеть на готовой странице, чтобы
+            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+        <span itemprop="telephone"><b>Наш номер: +3856 0 99 66 65</b></span>
+        <button class="clinic__call" aria-label="Заказ звонка">Заказать звонок</button>
+    </div>
+    <div class="clinic" itemscope itemtype="https://schema.org/MedicalOrganization">
+        <div class="clinic__image"><img itemprop="image" src="img/care.png" alt="Фото клиники">
+            <div class="clinic__name">
+                <h1 itemprop="name">Название клиники</h1>
+                <p class="clinic__address" itemprop="address"><em>Ленинский проспект, д. 160, Ленинский проспект</em></p></div>
+        </div>
+        <p>Что такое текст «рыба» знают все, кто работает с версткой журналов,
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+            как контент впоследствии будет выглядеть на готовой странице, чтобы
+            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+        <span itemprop="telephone"><b>Наш номер: +3856 0 99 66 65</b></span>
+        <button class="clinic__call" aria-label="Заказ звонка">Заказать звонок</button>
+    </div>
+    <div class="clinic" itemscope itemtype="https://schema.org/MedicalOrganization">
+        <div class="clinic__image"><img itemprop="image" src="img/care.png" alt="Фото клиники">
+            <div class="clinic__name">
+                <h1 itemprop="name">Название клиники</h1>
+                <p class="clinic__address" itemprop="address"><em>Ленинский проспект, д. 160, Ленинский проспект</em></p></div>
+        </div>
+        <p>Что такое текст «рыба» знают все, кто работает с версткой журналов,
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+            как контент впоследствии будет выглядеть на готовой странице, чтобы
+            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+        <span itemprop="telephone"><b>Наш номер: +3856 0 99 66 65</b></span>
+        <button class="clinic__call" aria-label="Заказ звонка">Заказать звонок</button>
+    </div>
+    <div class="clinic" itemscope itemtype="https://schema.org/MedicalOrganization">
+        <div class="clinic__image"><img itemprop="image" src="img/care.png" alt="Фото клиники">
+            <div class="clinic__name">
+                <h1 itemprop="name">Название клиники</h1>
+                <p class="clinic__address" itemprop="address"><em>Ленинский проспект, д. 160, Ленинский проспект</em></p></div>
+        </div>
+        <p>Что такое текст «рыба» знают все, кто работает с версткой журналов,
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+            как контент впоследствии будет выглядеть на готовой странице, чтобы
+            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+        <span itemprop="telephone"><b>Наш номер: +3856 0 99 66 65</b></span>
+        <button class="clinic__call" aria-label="Заказ звонка">Заказать звонок</button>
+    </div>
+    <div class="clinic" itemscope itemtype="https://schema.org/MedicalOrganization">
+        <div class="clinic__image"><img itemprop="image" src="img/care.png" alt="Фото клиники">
+            <div class="clinic__name">
+                <h1 itemprop="name">Название клиники</h1>
+                <p class="clinic__address" itemprop="address"><em>Ленинский проспект, д. 160, Ленинский проспект</em></p></div>
+        </div>
+        <p>Что такое текст «рыба» знают все, кто работает с версткой журналов,
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+            как контент впоследствии будет выглядеть на готовой странице, чтобы
+            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+        <span itemprop="telephone"><b>Наш номер: +3856 0 99 66 65</b></span>
+        <button class="clinic__call" aria-label="Заказ звонка">Заказать звонок</button>
+    </div>
+    <div class="clinic" itemscope itemtype="https://schema.org/MedicalOrganization">
+        <div class="clinic__image"><img itemprop="image" src="img/care.png" alt="Фото клиники">
+            <div class="clinic__name">
+                <h1 itemprop="name">Название клиники</h1>
+                <p class="clinic__address" itemprop="address"><em>Ленинский проспект, д. 160, Ленинский проспект</em></p></div>
+        </div>
+        <p>Что такое текст «рыба» знают все, кто работает с версткой журналов,
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+            как контент впоследствии будет выглядеть на готовой странице, чтобы
+            увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+        <span itemprop="telephone"><b>Наш номер: +3856 0 99 66 65</b></span>
+        <button class="clinic__call" aria-label="Заказ звонка">Заказать звонок</button>
+    </div>
+    <button class="clinics__all" aria-label="Показать больше клиник">Все кабинеты</button>
+</section>
+</main>
+</body>
+</html>
