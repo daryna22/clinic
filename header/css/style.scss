@@ -1,0 +1,336 @@
+$font-stack: Calibri, sans-serif;
+$primary-color: #43b1d2;
+$color1: #3fb6c6;
+$color2: #3cbbbb;
+$color3: #37c3a8;
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    &:link {
+    color: #494848;
+    }
+    &:visited {
+    color: #494848;
+    }
+    &:active {
+    color: white;
+    }
+}
+.head {
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    color: white;
+    font-family: $font-stack;
+    padding: 0 calc(50% - 650px);
+    @media (min-width: 320px) and (max-width: 680px) {
+            height: 150%;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            }
+    @media (min-width: 681px) and (max-width: 1170px) {
+            flex-direction: row;
+            align-items: stretch;
+            }
+    &__name {
+        font-size: 25px;
+        font-weight: 700;
+        margin-left: 5%;
+        @media (min-width: 320px) and (max-width: 680px) {
+            font-size: 100%;
+            }
+        }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+        }
+    &__navigation {
+        list-style: none;
+        font-size: 20px;
+        font-family: $font-stack;
+        display: flex;
+        @media (min-width: 320px) and (max-width: 680px) {
+            font-size: 120%;
+            display: block;
+            text-align: center;
+            }
+        @media (min-width: 681px) and (max-width: 1170px) {
+            font-size: 80%;
+            position: relative;
+            right: 5%;
+            top: 5%;
+            text-align: center;
+            }
+        }
+    &__main-image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: fit-content;
+        @media (min-width: 320px) and (max-width: 680px) {
+            padding-left: 10%;
+            }
+        @media (min-width: 681px) and (max-width: 1170px) {
+            position: relative;
+            padding-left: 1%;
+            margin: auto;
+            }
+        }
+    &__phone {
+        display: flex;
+        padding-left: 75%;
+        align-items: center;
+        @media (min-width: 320px) and (max-width: 680px) {
+            font-size: 80%;
+            justify-content: center;
+            padding-left: 10%;
+            }
+        @media (min-width: 681px) and (max-width: 1170px) {
+            font-size: 70%;
+            padding-left: 65%;
+            padding-right: 0;
+            padding-top: 3%;
+            width: fit-content;
+            }
+        }
+    &__item {
+        padding-right: 30px;
+        @media (min-width: 320px) and (max-width: 680px) {
+            padding-right: 0;
+            }
+        @media (min-width: 681px) and (max-width: 1170px) {
+            padding-right: 0%;
+            padding-left: 2%;
+            }
+        }
+}
+.banner {
+    background: url(../img/doctor.png) 50% no-repeat #cbd4e6;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding: 0 calc(50% - 650px);
+    @media (min-width: 320px) and (max-width: 680px) {
+        height: fit-content;
+        }
+    @media (min-width: 681px) and (max-width: 1170px) {
+        height: fit-content;
+        }
+    &__info {
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+        font-family: $font-stack;
+        @media (min-width: 320px) and (max-width: 680px) {
+            letter-spacing: normal;
+            width: 100%;
+            font-size: 85%;
+            padding-left: 2%;
+            }
+        @media (min-width: 681px) and (max-width: 1170px) {
+            letter-spacing: normal;
+            font-size: 85%;
+            padding-left: 2%;
+            }
+        }
+    &__recall-form {
+        font-family: $font-stack;
+        font-size: 40px;
+        @media (min-width: 320px) and (max-width: 680px) {
+            text-align: right;
+            font-size: 150%;
+            }
+        }
+}
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 320px) and (max-width: 680px) {
+        padding: 2%;
+        flex-direction: column;
+        }
+    @media (min-width: 681px) and (max-width: 1170px) {
+        padding-bottom: 2%;
+        flex-direction: column;
+        }
+    &__tel {
+        border: 0;
+        height: 30px;
+        }
+    &__submit {
+        background-color: #cbd4e6;
+        color: #6c758e;
+        height: 30px;
+        }
+}
+.bg-phone {
+    width: 25px;
+    height: 25px;
+    background: url(../img/css_sprites.png) -136px -79px;
+}
+
+.bg-treat {
+    width: 41px;
+    height: 45px;
+    background: url(../img/css_sprites.png) 6px -61px;
+}
+
+.bg-help {
+    width: 46px;
+    height: 41px;
+    background: url(../img/css_sprites.png) 2px 2px;
+}
+
+.bg-staff {
+    width: 28px;
+    height: 49px;
+    background: url(../img/css_sprites.png) -116px -5px;
+}
+
+.bg-docs {
+    width: 40px;
+    height: 38px;
+    background: url(../img/css_sprites.png) -61px 2px;
+}
+.ellipse_1 {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: inherit;
+    width: 68px;
+    height: 68px;
+}
+.blocks {
+    display: flex;
+    padding: 0 calc(50% - 650px);
+    @media (min-width: 320px) and (max-width: 680px) {
+        flex-direction: row;
+        flex-wrap: wrap; 
+        }
+    @media (min-width: 681px) and (max-width: 1170px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+    &__treatment, &__help, &__staff, &__doctors {
+        width: 25%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+        text-align: center;
+        @media (min-width: 320px) and (max-width: 680px) {
+            width: 50%;
+            margin-top: auto;
+            }
+        @media (min-width: 681px) and (max-width: 1170px) {
+            width: 50%;
+            }
+        }
+    &__treatment {
+        background-color: $primary-color;
+        }
+    &__help {
+        background-color: $color1;
+        }
+    &__staff {
+        background-color: $color2;
+        }
+    &__doctors {
+        background-color: $color3;
+        }
+}
+.clinics {
+    padding: 0 calc(50% - 650px);
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $font-stack;
+    @media (min-width: 320px) and (max-width: 680px) {
+        margin: 1%;
+        }
+    &__all {
+        margin: auto;
+        border-radius: 5%;
+        border: none;
+        outline: none;
+        width: 10%;
+        padding: 1ex;
+        font-size: 15px;
+        background-color: #cbd4e6;
+        @media (min-width: 320px) and (max-width: 680px) {
+            width: fit-content;
+            }
+        @media (min-width: 681px) and (max-width: 1170px) {
+            width: fit-content;
+            }
+        }
+}
+.clinic {
+    border: 3px solid $primary-color;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding: 1%;
+    margin: 1%;
+    @media (min-width: 320px) and (max-width: 680px) {
+        width: 98%;
+        text-align: center;
+        }
+    &__name {
+        text-align: right;
+        @media (min-width: 320px) and (max-width: 680px) {
+            text-align: center;
+            }
+        @media (min-width: 681px) and (max-width: 1170px) {
+            text-align: center;
+            }
+        }
+    &__call {
+        border-radius: 5%;
+        padding: 1%;
+        background-color: $color3;
+        border: none;
+        outline: none;
+        align-self: flex-end;
+        color: white;
+        @media (min-width: 320px) and (max-width: 680px) {
+            margin: 2%;
+            align-self: center;
+            }
+        @media (min-width: 681px) and (max-width: 1170px) {
+            margin: 2%;
+            align-self: center;
+            }
+        }
+    &__address {
+        color: #67bdd8;
+        }
+    &__image {
+        display: flex;
+        justify-content: space-between;
+        @media (min-width: 320px) and (max-width: 680px) {
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+            }
+        @media (min-width: 681px) and (max-width: 1170px) {
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+            }
+        }
+}
+
