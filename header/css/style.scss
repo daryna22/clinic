@@ -3,7 +3,9 @@ $primary-color: #43b1d2;
 $color1: #3fb6c6;
 $color2: #3cbbbb;
 $color3: #37c3a8;
-
+* {
+    box-sizing: border-box;
+}
 body {
     padding: 0;
     margin: 0;
@@ -109,7 +111,7 @@ a {
             padding-right: 0;
             }
         @media (min-width: 681px) and (max-width: 1170px) {
-            padding-right: 0%;
+            padding-right: 0;
             padding-left: 2%;
             }
         }
@@ -222,7 +224,7 @@ a {
         }
     @media (min-width: 681px) and (max-width: 1170px) {
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         }
     &__treatment, &__help, &__staff, &__doctors {
         width: 25%;
@@ -257,12 +259,13 @@ a {
     padding: 0 calc(50% - 650px);
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     font-family: $font-stack;
     @media (min-width: 320px) and (max-width: 680px) {
         margin: 1%;
         }
     &__all {
-        margin: auto;
+        margin: 3%;
         border-radius: 5%;
         border: none;
         outline: none;
