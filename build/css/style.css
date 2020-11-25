@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; }
+
+a {
+  text-decoration: none; }
+  a:link {
+    color: #494848; }
+  a:visited {
+    color: #494848; }
+  a:active {
+    color: white; }
+
+.head {
+  background-color: #43b1d2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 130px;
+  color: white;
+  font-family: Calibri, sans-serif;
+  padding: 0 calc(50% - 650px); }
+  @media (min-width: 320px) and (max-width: 680px) {
+    .head {
+      height: 150%;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center; } }
+  @media (min-width: 681px) and (max-width: 1170px) {
+    .head {
+      flex-direction: row;
+      align-items: stretch; } }
+  .head__name {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 5%; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .head__name {
+        font-size: 100%; } }
+  .head__menu {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content; }
+  .head__navigation {
+    list-style: none;
+    font-size: 20px;
+    font-family: Calibri, sans-serif;
+    display: flex; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .head__navigation {
+        font-size: 120%;
+        display: block;
+        text-align: center; } }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      .head__navigation {
+        font-size: 80%;
+        position: relative;
+        right: 5%;
+        top: 5%;
+        text-align: center; } }
+  .head__main-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: fit-content; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .head__main-image {
+        padding-left: 10%; } }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      .head__main-image {
+        position: relative;
+        padding-left: 1%;
+        margin: auto; } }
+  .head__phone {
+    display: flex;
+    padding-left: 75%;
+    align-items: center; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .head__phone {
+        font-size: 80%;
+        justify-content: center;
+        padding-left: 10%; } }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      .head__phone {
+        font-size: 70%;
+        padding-left: 65%;
+        padding-right: 0;
+        padding-top: 3%;
+        width: fit-content; } }
+  .head__item {
+    padding-right: 30px; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .head__item {
+        padding-right: 0; } }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      .head__item {
+        padding-right: 0;
+        padding-left: 2%; } }
+
+.banner {
+  background: url(../../src/img/doctor.png) 50% no-repeat #cbd4e6;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  padding: 0 calc(50% - 650px); }
+  @media (min-width: 320px) and (max-width: 680px) {
+    .banner {
+      height: fit-content; } }
+  @media (min-width: 681px) and (max-width: 1170px) {
+    .banner {
+      height: fit-content; } }
+  .banner__info {
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-family: Calibri, sans-serif; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .banner__info {
+        letter-spacing: normal;
+        width: 100%;
+        font-size: 85%;
+        padding-left: 2%; } }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      .banner__info {
+        letter-spacing: normal;
+        font-size: 85%;
+        padding-left: 2%; } }
+  .banner__recall-form {
+    font-family: Calibri, sans-serif;
+    font-size: 40px; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .banner__recall-form {
+        text-align: right;
+        font-size: 150%; } }
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 320px) and (max-width: 680px) {
+    .input {
+      padding: 2%;
+      flex-direction: column; } }
+  @media (min-width: 681px) and (max-width: 1170px) {
+    .input {
+      padding-bottom: 2%;
+      flex-direction: column; } }
+  .input__tel {
+    border: 0;
+    height: 30px; }
+  .input__submit {
+    background-color: #cbd4e6;
+    color: #6c758e;
+    height: 30px; }
+
+.bg-phone {
+  width: 25px;
+  height: 25px;
+  background: url(../../src/img/css_sprites.png) -136px -79px; }
+
+.bg-treat {
+  width: 41px;
+  height: 45px;
+  background: url(../../src/img/css_sprites.png) 6px -61px; }
+
+.bg-help {
+  width: 46px;
+  height: 41px;
+  background: url(../../src/img/css_sprites.png) 2px 2px; }
+
+.bg-staff {
+  width: 28px;
+  height: 49px;
+  background: url(../../src/img/css_sprites.png) -116px -5px; }
+
+.bg-docs {
+  width: 40px;
+  height: 38px;
+  background: url(../../src/img/css_sprites.png) -61px 2px; }
+
+.ellipse_1 {
+  border-radius: 50%;
+  background-color: white;
+  position: inherit;
+  width: 68px;
+  height: 68px; }
+
+.blocks {
+  display: flex;
+  padding: 0 calc(50% - 650px); }
+  @media (min-width: 320px) and (max-width: 680px) {
+    .blocks {
+      flex-direction: row;
+      flex-wrap: wrap; } }
+  @media (min-width: 681px) and (max-width: 1170px) {
+    .blocks {
+      flex-direction: row;
+      flex-wrap: nowrap; } }
+  .blocks__treatment, .blocks__help, .blocks__staff, .blocks__doctors {
+    width: 25%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    text-align: center; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .blocks__treatment, .blocks__help, .blocks__staff, .blocks__doctors {
+        width: 50%;
+        margin-top: auto; } }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      .blocks__treatment, .blocks__help, .blocks__staff, .blocks__doctors {
+        width: 50%; } }
+  .blocks__treatment {
+    background-color: #43b1d2; }
+  .blocks__help {
+    background-color: #3fb6c6; }
+  .blocks__staff {
+    background-color: #3cbbbb; }
+  .blocks__doctors {
+    background-color: #37c3a8; }
+
+.clinics {
+  padding: 0 calc(50% - 650px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: Calibri, sans-serif; }
+  @media (min-width: 320px) and (max-width: 680px) {
+    .clinics {
+      margin: 1%; } }
+  .clinics__all {
+    margin: 3%;
+    border-radius: 5%;
+    border: none;
+    outline: none;
+    width: 10%;
+    padding: 1ex;
+    font-size: 15px;
+    background-color: #cbd4e6; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .clinics__all {
+        width: fit-content; } }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      .clinics__all {
+        width: fit-content; } }
+
+.clinic {
+  border: 3px solid #43b1d2;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  padding: 1%;
+  margin: 1%; }
+  @media (min-width: 320px) and (max-width: 680px) {
+    .clinic {
+      width: 98%;
+      text-align: center; } }
+  .clinic__name {
+    text-align: right; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .clinic__name {
+        text-align: center; } }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      .clinic__name {
+        text-align: center; } }
+  .clinic__call {
+    border-radius: 5%;
+    padding: 1%;
+    background-color: #37c3a8;
+    border: none;
+    outline: none;
+    align-self: flex-end;
+    color: white; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .clinic__call {
+        margin: 2%;
+        align-self: center; } }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      .clinic__call {
+        margin: 2%;
+        align-self: center; } }
+  .clinic__address {
+    color: #67bdd8; }
+  .clinic__image {
+    display: flex;
+    justify-content: space-between; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .clinic__image {
+        flex-direction: column;
+        margin: auto;
+        align-items: center; } }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      .clinic__image {
+        flex-direction: column;
+        margin: auto;
+        align-items: center; } }
