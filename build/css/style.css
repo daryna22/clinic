@@ -461,8 +461,7 @@ a {
     display: flex;
     padding: 5%;
     align-self: center;
-    flex-direction: row;
-    align-self: flex-start; }
+    flex-direction: row; }
     @media (min-width: 681px) and (max-width: 1170px) {
       .intouch__mail, .intouch__mob, .intouch__map {
         width: 400px; } }
@@ -579,8 +578,8 @@ a {
   .article__buttons {
     display: flex;
     justify-content: flex-end;
-    margin: 5%;
-    margin-top: 5%; }
+    margin-top: 5%;
+    margin-bottom: 5%; }
   .article__more {
     width: 40%;
     margin-top: 5%;

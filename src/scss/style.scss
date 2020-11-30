@@ -494,7 +494,6 @@ a {
         padding: 5%;
         align-self: center;
         flex-direction: row;
-        align-self: flex-start;
         @media (min-width: 681px) and (max-width: 1170px) {
             width: 400px;
         }
@@ -619,8 +618,8 @@ a {
     &__buttons {
         display: flex;;
         justify-content: flex-end;
-        margin: 5%;
         margin-top: 5%;
+        margin-bottom: 5%;
     }
     &__more {
        width: 40%;
