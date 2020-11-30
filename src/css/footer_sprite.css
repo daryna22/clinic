@@ -1,0 +1,30 @@
+
+x
+.bg-button2 {
+    width: 45px; height: 38px;
+    background: url('../../src/img/footer_sprite.png') -10px -10px;
+}
+
+x
+.bg-mail {
+    width: 40px; height: 31px;
+    background: url('../../src/img/footer_sprite.png') -68px -68px;
+}
+
+x
+.bg-map {
+    width: 38px; height: 40px;
+    background: url('../../src/img/footer_sprite.png') -10px -68px;
+}
+
+x
+.bg-mob {
+    width: 27px; height: 40px;
+    background: url('../../src/img/footer_sprite.png') -140px -10px;
+}
+
+x
+.bg-button {
+    width: 45px; height: 38px;
+    background: url('../../src/img/footer_sprite.png') -75px -10px;
+}

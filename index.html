@@ -7,11 +7,12 @@
     <title>Единый центр записи</title>
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="build/css/style.css">
+    <script src="src/js/main.js"></script>
 </head>
 <body>
 <header>
     <div class="head">
-        <figure class="head__main-image"><img src="src/img/logo.png" alt="Логотип">
+        <figure class="main-image"><img src="src/img/logo.png" alt="Логотип">
             <figcaption class="head__name"> Единый центр записи</figcaption>
         </figure>
         <div class="head__menu" role="navigation">
@@ -88,7 +89,7 @@
             как контент впоследствии будет выглядеть на готовой странице, чтобы
             увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
         <span itemprop="telephone"><b>Наш номер: +3856 0 99 66 65</b></span>
-        <button class="clinic__call" aria-label="Заказ звонка">Заказать звонок</button>
+        <button class="call" aria-label="Заказ звонка">Заказать звонок</button>
     </div>
     <div class="clinic" itemscope itemtype="https://schema.org/MedicalOrganization">
         <div class="clinic__image"><img itemprop="image" src="src/img/care.png" alt="Фото клиники">
@@ -101,7 +102,7 @@
             как контент впоследствии будет выглядеть на готовой странице, чтобы
             увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
         <span itemprop="telephone"><b>Наш номер: +3856 0 99 66 65</b></span>
-        <button class="clinic__call" aria-label="Заказ звонка">Заказать звонок</button>
+        <button class="call" aria-label="Заказ звонка">Заказать звонок</button>
     </div>
     <div class="clinic" itemscope itemtype="https://schema.org/MedicalOrganization">
         <div class="clinic__image"><img itemprop="image" src="src/img/care.png" alt="Фото клиники">
@@ -114,7 +115,7 @@
             как контент впоследствии будет выглядеть на готовой странице, чтобы
             увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
         <span itemprop="telephone"><b>Наш номер: +3856 0 99 66 65</b></span>
-        <button class="clinic__call" aria-label="Заказ звонка">Заказать звонок</button>
+        <button class="call" aria-label="Заказ звонка">Заказать звонок</button>
     </div>
     <div class="clinic" itemscope itemtype="https://schema.org/MedicalOrganization">
         <div class="clinic__image"><img itemprop="image" src="src/img/care.png" alt="Фото клиники">
@@ -127,7 +128,7 @@
             как контент впоследствии будет выглядеть на готовой странице, чтобы
             увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
         <span itemprop="telephone"><b>Наш номер: +3856 0 99 66 65</b></span>
-        <button class="clinic__call" aria-label="Заказ звонка">Заказать звонок</button>
+        <button class="call" aria-label="Заказ звонка">Заказать звонок</button>
     </div>
     <div class="clinic" itemscope itemtype="https://schema.org/MedicalOrganization">
         <div class="clinic__image"><img itemprop="image" src="src/img/care.png" alt="Фото клиники">
@@ -140,7 +141,7 @@
             как контент впоследствии будет выглядеть на готовой странице, чтобы
             увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
         <span itemprop="telephone"><b>Наш номер: +3856 0 99 66 65</b></span>
-        <button class="clinic__call" aria-label="Заказ звонка">Заказать звонок</button>
+        <button class="call" aria-label="Заказ звонка">Заказать звонок</button>
     </div>
     <div class="clinic" itemscope itemtype="https://schema.org/MedicalOrganization">
         <div class="clinic__image"><img itemprop="image" src="src/img/care.png" alt="Фото клиники">
@@ -153,10 +154,122 @@
             как контент впоследствии будет выглядеть на готовой странице, чтобы
             увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
         <span itemprop="telephone"><b>Наш номер: +3856 0 99 66 65</b></span>
-        <button class="clinic__call" aria-label="Заказ звонка">Заказать звонок</button>
+        <button class="call" aria-label="Заказ звонка">Заказать звонок</button>
     </div>
     <button class="clinics__all" aria-label="Показать больше клиник">Все кабинеты</button>
 </section>
+<section class="useful" aria-label="Полезная информация">
+    <div class="useful__articles" aria-label="Статьи">
+        <h1><em>Последние статьи</em></h1>
+        <div class="article">
+        <div class="article__img"><img src="src/img/article.png" class="article__photo">
+        <div class="article__buttons">
+            <button class="left" aria-label="Предыдущая статья"></button>
+            <button class="right" aria-label="Следующая статья"></button>
+        </div>
+        </div>
+        <div class="article__text">Что такое текст «рыба» знают все, кто работает с версткой журналов, 
+           дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+           как контент впоследствии будет выглядеть на готовой странице, чтобы увидеть, 
+           правильно ли размещаются абзацы, отступы, хорошо ли смотрятся шрифты. Такие 
+           рыбные тексты, как правило, не несут никакой смысловой нагрузки.
+           
+           На моменте создания макета у дизайнера нет готовых текстов, поэтому генерируется
+           некий демонстрационный текст. Некоторые студии предпочитают писать такой текст 
+           самостоятельно, но чаще используются готовые тексты, созданные программой – генератором
+           текста. Более того, у такого текста есть один неоспоримый плюс –
+           <button class="article__more" aria-label="Прочесть статью">Читать подробнее</button>
+        </div>
+        </div>
+    </div>
+    <div class="useful__reviews" aria-label="Отзывы" >
+        <h1><em>Отзывы о нас</em></h1>
+        <span>Что такое текст «рыба» знают все, кто работает с версткой журналов, 
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+            как контент впоследствии будет выглядеть на готовой странице, чтобы увидеть, 
+            правильно ли размещаются абзацы, отступы, хорошо ли смотрятся шрифты. Такие 
+            рыбные тексты, как правило, не несут никакой смысловой нагрузки.
+ 
+            На моменте создания макета у дизайнера нет готовых текстов, поэтому генерируется
+            некий демонстрационный текст. Некоторые студии предпочитают писать такой текст 
+            самостоятельно, но чаще используются готовые тексты, созданные программой – генератором
+            текста. Более того, у такого текста есть один неоспоримый плюс – </span>
+        <div class="buttons">
+        <button class="left" aria-label="Предыдущая статья"></button>
+        <button class="right" aria-label="Следующая статья"></button>
+        </div>
+    </div>
+</section>
+<section class="callback" aria-label="Форма обратного звонка">
+    <figure class="main-image"><img src="src/img/logo.png" alt="Логотип">
+        <figcaption class="head__name"> Единый центр записи</figcaption>
+    </figure>
+    <form action="#" class="input" aria-label="Форма обратного звонка">
+        <p class="order">Заказать звонок:</p>
+        <div aria-label="Ввести номер"><label><input type="tel" name="tel" placeholder="+380" class="input__tel"></label></div>
+        <div aria-label="Отправить номер"><label><input type="submit" value="Отправить" class="input__submit input__sub"></label></div>
+    </form>
+</section>
 </main>
+<footer class="footer">
+    <div class="intouch" aria-label="Контакты для связи">
+        <h1>Get in Touch</h1>
+        <div class="intouch__mail">
+        <div class="bg-mail"></div>
+        <p>free@psdfreebies.com <br>
+           free@psdfreebies.com</p>
+        </div>
+        <div class="intouch__mob">
+        <div class="bg-mob"></div>
+           <p>+123 456 7890 <br>
+           +123 456 7890</p>
+        </div>
+        <div class="intouch__map">
+        <div class="bg-map"></div>
+        <p>123, Main Road, New City, <br>
+           My Country 123456</p>
+        </div>
+        <div class="intouch__social">
+            <a href="#"><img src="src/img/fb.png"> </a>
+             <a href="#"><img src="src/img/google.png"> </a>
+             <a href="#"><img src="src/img/vk.png"> </a>
+             <a href="#"><img src="src/img/yt.png"></a>
+             <a href="#"><img src="src/img/in.png"> </a></div>
+    </div>
+    <div class="links" aria-label="Меню" role="menubar">
+        <h1>Quick Links</h1>
+        <ul class="links__menu">
+            <li class="link"><a href="#">About us</a></li>
+            <li class="link"><a href="#">Blog</a></li>
+            <li class="link"><a href="#">Contact us</a></li>
+            <li class="link"><a href="#">Faq</a></li>
+            <li class="link"><a href="#">Insurance</a></li>
+            <li class="link"><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="services" aria-label="Список услуг">
+        <h1>Our Services</h1>
+        <ul class="services__menu">
+            <li class="link"><a href="#">Work Injuries</a></li>
+            <li class="link"><a href="#">Sport Injuries</a></li>
+            <li class="link"><a href="#">Cold Laser Therapy</a></li>
+            <li class="link"><a href="#">Massage Therapy</a></li>
+            <li class="link"><a href="#">Physiotherapy</a></li>
+            <li class="link"><a href="#">Chiropratic Therapy</a></li>
+        </ul>
+    </div>
+    <div class="form" role="form" aria-label="Форма обратной связи">
+        <h1>Enquiry Form</h1>
+        <form action="#">
+            <div aria-label="Ввод имени"><label><input type="name" name="name" placeholder="Name" class="form__field"></label></div>
+            <div aria-label="Ввод телефона"><label><input type="tel" name="tel" placeholder="Phone" class="form__field"></label></div>
+            <div aria-label="Ввод сообщения"><label><input type="message" name="message" placeholder="Message" class="form__message"></label></div>
+            <div aria-label="Отправить форму"><label><input type="submit" value="SUBMIT" class="form__submit"></label></div>
+        </form>
+    </div>
+</footer>
+<div class="end">
+    <p>Copywright @ 2017.</p>
+</div>
 </body>
 </html>
