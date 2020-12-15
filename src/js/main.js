@@ -10,7 +10,7 @@ var fal = 2 > 3; // false
 alert (fal);
 var tr = 2 < 3; // true
 alert (tr);
-var S; // undefined 
+var S; // undefined
 alert (S);
 var services = ["Treatment", "Help", "Staff", "Doctors"] // array
 alert (services);
