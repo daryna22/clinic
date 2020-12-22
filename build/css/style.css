@@ -501,13 +501,20 @@ a {
     .intouch {
       width: 90%;
       padding-left: 1%; } }
-  .intouch__mail, .intouch__mob, .intouch__map {
+  .intouch__mail, .intouch__map {
     display: flex;
     padding: 5%;
     align-self: center;
     flex-direction: row; }
     @media (min-width: 681px) and (max-width: 1170px) {
-      .intouch__mail, .intouch__mob, .intouch__map {
+      .intouch__mail, .intouch__map {
+        width: 400px; } }
+  .intouch__mob {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%; }
+    @media (min-width: 681px) and (max-width: 1170px) {
+      .intouch__mob {
         width: 400px; } }
   .intouch__social {
     padding: 5%; }
@@ -582,7 +589,7 @@ a {
 
 .right {
   background: url("../../src/img/arrow-right.png") 50% no-repeat;
-  margin-left: 3%; }
+  margin-left: 5px; }
 
 .left, .right {
   height: 20px;
@@ -607,25 +614,31 @@ a {
   @media (min-width: 320px) and (max-width: 680px) {
     .article {
       flex-direction: column; } }
-  .article__text {
-    padding-left: 5%;
-    margin: 0;
-    display: flex;
-    flex-direction: column; }
   .article__img {
     display: flex;
     flex-direction: column;
     align-items: flex-start; }
-  @media (min-width: 320px) and (max-width: 680px) {
-    .article__photo {
-      max-width: 300px; } }
+  .article__photo {
+    margin-right: 5%; }
+    @media (min-width: 320px) and (max-width: 680px) {
+      .article__photo {
+        max-width: 300px; } }
   .article__buttons {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 5%;
-    margin-bottom: 5%; }
+    margin-top: 1%; }
   .article__more {
-    width: 40%;
-    margin-top: 5%;
+    width: 30%;
+    margin: 5px;
     height: 15%;
     font-size: 15px; }
+
+.learn_more {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -40px;
+  margin-bottom: 5%; }
+
+.pages, .article {
+  display: none; }
+
+.pages, .first {
+  display: flex; }

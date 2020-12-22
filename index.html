@@ -7,11 +7,14 @@
     <title>Единый центр записи</title>
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="build/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="src/js/main.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+
+    <script src="node_modules/bootstrap/dist/css/bootstrap.css"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body>
 <header>
+    <div class="container">
     <div class="head">
         <figure class="main-image"><img src="src/img/logo.png" alt="Логотип">
             <figcaption class="head__name"> Единый центр записи</figcaption>
@@ -30,6 +33,7 @@
                 <li class="head__item"><a href="#"><b>Контакты</b></a></li>
             </ul>
         </div>
+    </div>
     </div>
 </header>
 <main>
@@ -345,25 +349,49 @@
 <section class="useful" aria-label="Полезная информация">
     <div class="useful__articles" aria-label="Статьи">
         <h1><em>Последние статьи</em></h1>
-        <div class="article">
-        <div class="article__img"><img src="src/img/article.png" class="article__photo">
+        <div class="pages">
+        <p class="article first" >
+        <img src="src/img/article.png" class="article__photo">
+            Что такое текст «рыба» знают все, кто работает с версткой журналов,
+            дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+            как контент впоследствии будет выглядеть на готовой странице, чтобы увидеть,
+            правильно ли размещаются абзацы, отступы, хорошо ли смотрятся шрифты. Такие
+            рыбные тексты, как правило, не несут никакой смысловой нагрузки.
+
+            На моменте создания макета у дизайнера нет готовых текстов, поэтому генерируется
+            некий демонстрационный текст. Некоторые студии предпочитают писать такой текст
+            самостоятельно, но чаще используются готовые тексты, созданные программой – генератором
+            текста. Более того, у такого текста есть один неоспоримый плюс –</p>
+            <p class="article">
+                <img src="src/img/article.png" class="article__photo">
+                Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                как контент впоследствии будет выглядеть на готовой странице, чтобы увидеть,
+                правильно ли размещаются абзацы, отступы, хорошо ли смотрятся шрифты. Такие
+                рыбные тексты, как правило, не несут никакой смысловой нагрузки.
+
+                На моменте создания макета у дизайнера нет готовых текстов, поэтому генерируется
+                некий демонстрационный текст. Некоторые студии предпочитают писать такой текст
+                самостоятельно, но чаще используются готовые тексты, созданные программой – генератором
+                текста. Более того, у такого текста есть один неоспоримый плюс –
+            <p class="article last" >
+                <img src="src/img/article.png" class="article__photo">
+                На моменте создания макета у дизайнера нет готовых текстов, поэтому генерируется
+                некий демонстрационный текст. Некоторые студии предпочитают писать такой текст
+                самостоятельно, но чаще используются готовые тексты, созданные программой – генератором
+                текста. Более того, у такого текста есть один неоспоримый плюс
+
+                На моменте создания макета у дизайнера нет готовых текстов, поэтому генерируется
+                некий демонстрационный текст. Некоторые студии предпочитают писать такой текст
+                самостоятельно, но чаще используются готовые тексты, созданные программой – генератором
+                текста. Более того, у такого текста есть один неоспоримый плюс –</p>
+        </div>
         <div class="article__buttons">
-            <button class="left" aria-label="Предыдущая статья"></button>
-            <button class="right" aria-label="Следующая статья"></button>
+            <button class="left" aria-label="Предыдущая статья" id="prev_article"></button>
+            <button class="right" aria-label="Следующая статья" id="next_article"></button>
         </div>
-        </div>
-        <div class="article__text">Что такое текст «рыба» знают все, кто работает с версткой журналов, 
-           дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
-           как контент впоследствии будет выглядеть на готовой странице, чтобы увидеть, 
-           правильно ли размещаются абзацы, отступы, хорошо ли смотрятся шрифты. Такие 
-           рыбные тексты, как правило, не несут никакой смысловой нагрузки.
-           
-           На моменте создания макета у дизайнера нет готовых текстов, поэтому генерируется
-           некий демонстрационный текст. Некоторые студии предпочитают писать такой текст 
-           самостоятельно, но чаще используются готовые тексты, созданные программой – генератором
-           текста. Более того, у такого текста есть один неоспоримый плюс –
-           <button class="article__more" aria-label="Прочесть статью">Читать подробнее</button>
-        </div>
+        <div class="learn_more">
+        <button class="article__more" aria-label="Прочесть статью">Читать подробнее</button>
         </div>
     </div>
     <div class="useful__reviews" aria-label="Отзывы" >
@@ -502,6 +530,20 @@
         $('#clinicsMRT').css('display', 'none');
         $('#clinicsRAY').css('display', 'flex');
     }
-
+    $(function() {
+        var current = $("div.pages .article").first();
+        $("#next_article").click(function() {
+            $(current).not(".last").hide("fast", function() {
+                current = $(current).next(".article");
+                $(current).show("fast");
+            });
+        });
+        $("#prev_article").click(function() {
+            $(current).not(".first").hide("fast", function() {
+                current = $(current).prev(".article");
+                $(current).show("fast");
+            });
+        });
+    });
 </script>
 </html>
