@@ -120,7 +120,7 @@ a {
         }
     }
 .banner {
-    background: u rl(../../src/img/doctor.png) 50% no-repeat #cbd4e6;
+    background: url(../../src/img/doctor.png) 50% no-repeat #cbd4e6;
     display: flex;
     height: 500px;
     justify-content: center;
@@ -679,7 +679,8 @@ a {
     margin-top: -40px;
     margin-bottom: 5%;
 }
+.pages2, span {display:none;}
+.pages2, span.first1 {display:block;}
 
-
-
-
+.pages, .article {display:none;}
+.pages, .article.first {display:flex;}
